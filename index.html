@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Name - CV</title>
+    <style>
+        body {
+            /* Set the background image and adjust other background properties */
+            background-image: url('IMG-20231217-WA0056.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: black;
+            image-rendering: auto; /* Optimize image rendering */
+        }
+
+        /* Additional styles for the toggle button and hidden section */
+        .toggle-button {
+            cursor: pointer;
+            padding: 10px;
+            border: 2px solid #3498db;
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .toggle-content {
+            display: none;
+            border: 2px solid #3498db;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        header, footer {
+            position: sticky;
+            top: 0; /* for header */
+            bottom: 0; /* for footer */
+            width: 100%;
+            background-color: #22054a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            z-index: 100; /* Ensure header and footer are above other content */
+        }
+
+        .content {
+            padding-top: 50px; /* Adjust to accommodate header height */
+            padding-bottom: 50px; /* Adjust to accommodate footer height */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Charlton Mapiye</h1>
+        <p>Software Engineer</p>
+    </header>
+
+    <!-- Toggle button for about section -->
+    <div class="toggle-button" onclick="toggleContent('about-content')">About</div>
+
+    <!-- About Me content section -->
+    <section id="about-content" class="toggle-content">
+        <h2>About Me</h2>
+        <p>As a junior software developer with formal education in software engineering and system development.
+        <br>I am dedicated to crafting innovative solutions that enhance business value.
+        <br>Proficient in Python and Java, with additional exposure to HTML and CSS, I bring a solid foundation to the development landscape.</p>
+
+        <p>My technical acumen, diagnostic proficiency, and troubleshooting skills set me apart.
+        <br>I am adept at seamless communication through digital collaboration tools, including Teams, Zoom, Jira, and Outlook.
+        <br>I am confident that my skills and experience position me as a compelling candidate for a Junior Software Developer role.</p>
+    </section>
+
+    <!-- Toggle button for Experience section -->
+    <div class="toggle-button" onclick="toggleContent('experience')">Experience</div>
+
+    <!-- Experience content section -->
+    <section id="experience" class="toggle-content">
+        <h2>Experience:</h2>
+        <h3>Software Engineer - Intern | VOSS Solutions | Cape Town, South Africa</h3>
+        <br>(07/2023 - 12/2023)
+        <p>• Currently reporting to the Dev Manager
+        <p>• Actively contribute to the team's projects and collaborate with experienced professionals to gain valuable insights into the software development lifecycle.
+        <p>• Undertake tasks assigned by the Dev manager.
+        <p>• Occasionally take on QA responsibilities as part of my development role.</p>
+
+        <!-- Add more experience entries as needed -->
+    </section>
+
+    <!-- Toggle button for Education section -->
+    <div class="toggle-button" onclick="toggleContent('education')">Education</div>
+
+    <!-- Education content section -->
+    <section id="education" class="toggle-content">
+        <h2>Education:</h2>
+        <h3>Software Development, Hyperion Development | Cape Town, South Africa</h3>
+        <br>(05/2022 – 12/2022)
+        <p>• Front-end programming languages in HTML & CSS.
+        <p>• Back-end programming languages in Python & Java.
+        <p>• Version control systems in Git and GitHub.
+        <p>• Database technologies in MySQL.
+        <p>• Software development methodologies and practices.
+        <p>• Server-side technology in Python.
+
+        <!-- Add more education entries as needed -->
+    </section>
+
+    <!-- Toggle button for INterests and Hobbies section -->
+    <div class="toggle-button" onclick="toggleContent('Certificates')">Certificates</div>
+
+    <!-- reference content section -->
+    <section id="Certificates" class="toggle-content">
+        <h2>Certificates:</h2>
+        <h3>Software Engineering</h3>
+        <ul>
+            <li>Level 1 Introduction to Programming</li>
+            <li>Level 2 Introduction to Software Engineering</li>
+            <li>Level 3 Data Science & Advanced Algorithms</li>
+            <!-- Add more skills as needed -->
+        </ul>
+    </section>
+
+    <!-- Toggle button for Skills section -->
+    <div class="toggle-button" onclick="toggleContent('skills')">Skills</div>
+
+    <!-- Skills content section -->
+    <section id="skills" class="toggle-content">
+        <h2>Skills</h2>
+        <ul>
+            <li>Problem Solving | communication</li>
+            <li>Python | Java | Css | Html | JSON</Html></li>
+            <li>Git | Git Bash | Linux | Ubuntu | WSL</li>
+            <li>GitLab | Github | Jenkins | Jira | Docker</li>
+            <li>Visual Studio Code | Pycharm</li>
+            <li>TestLink | Regression Testing</li>
+            <li>MS Teams | Zoom | Slack | Replicon</li>
+            <!-- Add more skills as needed -->
+        </ul>
+    </section>
+
+    <!-- Toggle button for Reference section -->
+    <div class="toggle-button" onclick="toggleContent('Reference')">Reference</div>
+
+    <!-- reference content section -->
+    <section id="Reference" class="toggle-content">
+        <h2>References:</h2>
+        <ul>
+            <li>Grant Wilson - DevManager | Voss Solutions
+            <br>Email: grant.wilson@voss-solutions.com
+            <br>Phone: +27 83 267 7500<p>
+
+            <li>Nizaam - Lecturer | Hyperion Development
+            <br>Email: Nizaamd@hyperiondev.com
+            <br>Phone: +27 87 073 5694
+            <!-- Add more skills as needed -->
+        </ul>
+    </section>
+
+    <!-- Toggle button for INterests and Hobbies section -->
+    <div class="toggle-button" onclick="toggleContent('Interests & Hobbies')">Interests & Hobbies</div>
+
+    <!-- reference content section -->
+    <section id="Interests & Hobbies" class="toggle-content">
+        <h2>Interests & Hobbies:</h2>
+        <ul>
+            <p>My interests and hobbies reflect a dynamic mix of physical activity and social connections. I have a passion for rugby and soccer, finding joy in the strategic gameplay and camaraderie these sports offer. Additionally, I prioritize a healthy lifestyle by dedicating time to gym workouts, fostering both physical strength and mental well-being. Beyond the thrill of sports and fitness, I cherish moments spent with my family and friends, recognizing the importance of strong connections in my life. Whether it's cheering on my favorite team or sharing laughter with loved ones, these experiences contribute to the fabric of my interests.</p>
+
+            <p>Always seeking new horizons, I am an adventurous spirit open to fresh experiences. Embracing the unknown, I thrive on the excitement that comes with trying something different. Whether it's exploring a new hobby, discovering a unique cuisine, or embarking on an unplanned adventure, I relish the opportunity to broaden my horizons and create lasting memories. In essence, my interests and hobbies encapsulate a well-rounded blend of sportsmanship, fitness, and a deep appreciation for the bonds that tie us together, all while maintaining an adventurous spirit ready to embrace the unfamiliar.</p>
+            <!-- Add more skills as needed -->
+        </ul>
+    </section>
+
+    <!-- Toggle button for INterests and Hobbies section -->
+    <div class="toggle-button" onclick="toggleContent('More')">More</div>
+
+    <!-- reference content section -->
+    <section id="More" class="toggle-content">
+        <h2>More:</h2>
+        <ul>
+            <li>LinkedIn: https://www.linkedin.com/in/charlton-mapiye-49353b246/</li>
+            <li>Github: https://github.com/Charlton20</li>
+            <!-- Add more skills as needed -->
+        </ul>
+    </section>
+
+    <script>
+        // JavaScript to toggle the visibility of the content sections
+        function toggleContent(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        }
+    </script>
+
+    <footer>
+        <p>Email: charltonmapiye18@gmail.com | Phone: +27 84 081 1993</p>
+    </footer>
+
+</body>
+</html>
